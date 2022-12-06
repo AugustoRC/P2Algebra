@@ -1,0 +1,1303 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{{Imagens/}}
+
+
+\title{Algebra Linear}
+\date{29/10/2022}
+\author{Anabelle Elizabeth Araújo de Souza\\Pedro Henrique Levy Fermino Ferreira\\}
+\usepackage{geometry}
+\geometry{a4paper,left=3cm,right=22mm,top=1cm,bottom=3cm}
+
+\begin{document}
+
+
+\maketitle
+
+\section{Exercício 1}\label{ex1}
+Considere as bases do R−espaço vetorial R3, A = \{(4, 2, 0),(1, −1, 1),(5, 3, 3)\}  e
+B = \{(1, −2, 1),(1, 5, 2),(1, 0, 1)\}. Exiba as matrizes de mudança de base MB→A e MA→B. Escreva também os
+vetores abaixo nas bases indicadas:
+\\• v = (0, 1, 2)A em B
+\\• v = (1, 3, −1)B em A\\
+\textbf\\{Mudança B \rightarrow A (b1)
+\\$x. a_1 + y. a_2 + z. a_3 = b_1 $\\\\}
+x.(4, 2, 0) + y.(1, -1, 1) + z.( 5, 3, 3) = (1, -2, 1) \\\\
+
+$\begin{align}\\
+4 x+y+5 z=1\\&
+2 x-y+3 z=-2\\&
+y+3 z=1\\\\&
+4 x+y+5 z=1\\&
+2 x-y+3 z=-2\\&
+6 x+8 z=-1\\\\&
+2 x-y+3 z=-2\\&
+y+3 z=1\\&
+2 x+6 z=-1\\\\&
+6 x+8 z=-1\\&
+2 x+6 z=-1(-3)\\\\&
+6 x+8 z=-1\\&
+-6 x-18 z=3\\\\&
+-10 z=2\\&
+z=-2 / 10\\&
+z=\mathbf{-1/5}\\\\&
+2 x+6 z=-1\\&
+2 x+6 \cdot(-1 / 5)=-1\\\\&
+\mathbf{x=1 / 10}\\\\&
+y+3 z=1\\&
+y+3(-1 / 5)=1\\&
+-1+3 / 5\\&
+\mathbf{y=8 / 5}&
+\end{align}$
+\\\\
+\textbf{Mudança B \rightarrow A (b2)}\\\\
+$\begin{align}
+4 x+y+5 z=1\\&
+2 x=y+3 z=5\\&
+y+3 z=2\\\\&
+4 x+y+5 z=1\\&
+2 x-y+3 z=5\\\\&
+2 x-y+3 z=5\\&
+y+3=2\\\\&
+6 x+8 x=6\\&
+2 x+6 z=7(-3)\\\\&
+-10 z=-15\\&
+\mathbf{z=3 / 2}\\\\&
+2 x+6 \cdot(3 / 2)=7\\&
+\mathbf{x=-1}\\\\&
+y+3 \cdot(3 / 2)=2\\&
+\mathbf{y=-5 / 2}\\\\\\&
+\end{align}$
+
+\textbf{Mudança B \rightarrow A (b3)}\\\\
+$$
+\begin{aligned}
+4 x+y+5 z=1 \\&
+2 x-y+3 z=0 \\&
+y+3 z=1 \\\\&
+4 x+y=5 z=1 \\&
+2 x-y+3 z=0 \\\\&
+2 x-y+3 z=0 \\&
+y+3 z=1 \\&
+6 x+8 z=1 \\\\&
+2 x+6 z=1 \\&
+\mathbf{x=-1 / 10} \\\\&
+\mathbf{z=1 / 5} \\\\&
+y+3(1 / 5)=1 \\&
+y+3 / 5=1 \\&
+\mathbf{y=2 / 5}\\&
+\end{aligned}$
+$
+
+\\\\
+\textbf{Mudança A \rightarrow B (a1)
+\\$x. b_1 + y. b_2 + z. b_3 = a_1 $\\\\}
+x.(1, -2, 1) + y.(1, 5, 2) + z.( 1, 0, 1) = (4, 2, 0) \\\\
+$\begin{align}
+x+y+z=4 \\&
+-2 x+5 y=2 \\&
+x+2 y+z=0 \\\\&
+x+y+z=4(.2\} \\&
+-2 x+5 y=2 \\\\&
+x+y+z=4 \\&
+x+2 y+2=0 (-1)\\\\&
+-2 x+2 y+2 z=8 \\&
+-2 x+5 y=2 \\\\&
+7 y+2 z=10 \\\\&
+x+y+z=4 \\&
+-x-2 y-z=0 \\&
+-y=4 \\&
+\mathbf{y=-4} \\\\&
+-2 x+5(-4)=2 \\&
+-20 \\&
+-2 x=2 \\&
+-2 x = 22\\&
+\mathbf{x = -11}\\\\&
+7y + 2z = 10\\&
+7.(-4)+ 2z = 10\\&
+\mathbf{z = 19}\\\\&
+\end{align}$
+\\
+\textbf{Mudança A \rightarrow B (a2)}\\\\
+$\begin{align}
+x + y + z = 1\\&
+-2x + 5y = -1\\&
+x + 2y + z = 1\\\\&
+x + y + z = 1  ._(2)\\&
+-2x + 5y = -1\\\\&
+x + y + z = 1\\&
+z = 2y + z = 1\\\\&
+2x + 2y = 2z = 2\\&
+-2x + 5y = -1\\\\&
+7y + 2z = 1\\&
+\mathbf{y = 0}\\\\&
+7 . 0 + 2z = 1\\&
+\mathbf{z = 1/2}\\\\&
+-2x + 0 = -1\\&
+-2x + 0 = -1\\&
+-2x = -1\\&
+\mathbf{x = 1/2}\\\\&
+\end{align}$
+\\$
+\textbf{Mudança A \rightarrow B (a3)}\\\\
+$
+\begin{align}
+x + y + z = 5\\&
+-2x + 5y = 3\\&
+x + 2y + z = 3\\\\&
+x + y + z = 5\\&
+-2x + 5y = 3\\\\&
+x + y + z = 5\\&
+x + 2y + z = 3\\\\&
+7y + 2z = 13\\&
+\mathbf{y = -2}\\\\&
+7y + 2z = 13\\&
+\mathbf{y = -2}\\\\&
+7 . (-2) = 2z = 13\\&
+\mathbf{z = 27/2}\\\\&
+-2x + 5(-2) = 3\\&
+-2x - 10 = 13\\&
+-2x = 13\\&
+\mathbf{x = -13/2}\\\\&
+\end{align}
+$
+
+$
+\mathbf{M_B \rightarrow _A:}
+\begin{hbox}{
+$\left[
+\begin{array} {rrr}
+\frac{1}{10} & -1 & \frac{-1}{10}\\\\
+\frac{8}{5} & \frac{-5}{2} & \frac{2}{5}\\\\
+\frac{-1}{5} & \frac{3}{2} & \frac{1}{5}\\\\
+\end{array}
+\right]
+$
+\textbf{.}
+$\left[
+\begin{array} {c}
+1\\\\
+3\\\\
+-1\\\\
+\end{array}
+\right]
+$
+\\\rightarrow\\$
+$\left[
+\begin{array} {rrr}
+\frac{1}{10}_*1 & -1_*3 & \frac{-1}{10}_*(-1)\\\\
+\frac{8}{5}_*1 & \frac{-5}{2}_*3 & \frac{2}{5}_*(-1)\\\\
+\frac{-1}{5}_*! & \frac{3}{2}_*3 & \frac{1}{5}_*(-1)\\\\
+\end{array}
+\right]
+$
+\textbf{=}
+$\left[
+\begin{array} {c}
+\frac{-25}{2}\\\\
+-4\\\\
+\frac{55}{2}\\\\
+\end{array}
+\right]}
+$
+$
+\end{hbox}
+\\\\\\\\\\
+
+\mathbf{M_A \rightarrow _B:}
+\begin{hbox}{
+
+$\left[
+\begin{array} {rrr}
+-11 & \frac{1}{2} & \frac{-13}{2}\\\\
+4 & 0 & -2\\\\
+19 & \frac{1}{2} & \frac{27}{2}\\\\
+\end{array}
+\right]
+$
+\textbf{.}
+$\left[
+\begin{array} {c}
+0\\\\
+1\\\\
+2\\\\
+\end{array}
+\right]
+$
+\\\rightarrow\\
+$\left[
+\begin{array} {rrr}
+-11_*0 & \frac{1}{2}_*1 & \frac{-13}{2}_*2\\\\
+4_*0 & 0_*1 & -2_*2\\\\
+19_*0 & \frac{1}{2}_*1 & \frac{27}{2}_*2\\\\
+\end{array}
+\right]
+$
+\textbf{=}
+$\left[
+\begin{array} {c}
+\frac{-14}{5}\\\\
+\frac{-63}{10}\\\\
+\frac{41}{10}\\\\
+\end{array}
+\right]
+$}
+\end{hbox}
+\newpage
+\section{Exercício 2}\label{ex2}
+Considere o conjunto S = \{(1, 1, 1, 1, 1),(2, 0, −1, 1, 3),(3, 1, 0, 2, 4),(2, 2, 5, 8, −1),(0, 1, 0, 2, 3)\}.
+\begin{itemize}
+    \item S é LI ou LD?
+ 
+\end{itemize}
+\mathbf{S = }
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccc|c}
+1 & 2 & 3 & 2 & 0 & 0\\
+1 & 0 & 1 & 2 & 1 & 0\\
+1 & -1 & 0 & 5 & 0 & 0\\
+1 & 1 & 2 & 8 & 2 & 0\\
+1 & 3 & 4 & -1 & 3 & 0\\
+\end{tabular}
+\right]
+
+\textbf{l3\leftarrow l4-l3}
+\\\\
+$\left[
+\begin{tabular}{ccccc|c}
+1 & 2 & 3 & 2 & 0 & 0\\
+1 & 0 & 1 & 2 & 1 & 0\\
+0 & 2 & 2 & 3 & 2 & 0\\
+1 & 1 & 2 & 8 & 2 & 0\\
+1 & 3 & 4 & -1 & 3 & 0\\
+\end{tabular}
+\right]
+$}
+\end{hbox}
+\\\\\\\\\\
+\xrightarrow{l1\rightarrow l1-l2}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccc|c}
+0 & 2 & 2 & 0 & -1 & 0\\
+1 & 0 & 1 & 2 & 1 & 0\\
+0 & 2 & 2 & 3 & 2 & 0\\
+1 & 1 & 2 & 8 & 2 & 0\\
+1 & 3 & 4 & -1 & 3 & 0\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l3\rightarrow l3-l1}
+\\\\
+$\left[
+\begin{tabular}{ccccc|c}
+0 & 2 & 2 & 0 & -1 & 0\\
+1 & 0 & 1 & 2 & 1 & 0\\
+0 & 0 & 0 & 3 & 1 & 0\\
+1 & 1 & 2 & 8 & 2 & 0\\
+1 & 3 & 4 & -1 & 3 & 0\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l2\rightarrow l2-l3}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccc|c}
+0 & 2 & 2 & 0 & -1 & 0\\
+1 & 0 & 1 & -1 & 0 & 0\\
+0 & 0 & 0 & 3 & 1 & 0\\
+1 & 1 & 2 & 8 & 2 & 0\\
+1 & 3 & 4 & -1 & 3 & 0\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l4\rightarrow l4-3l3}
+\\\\
+$\left[
+\begin{tabular}{ccccc|c}
+0 & 2 & 2 & 0 & -1 & 0\\
+1 & 0 & 1 & -1 & 0 & 0\\
+0 & 0 & 0 & 3 & 1 & 0\\
+1 & 1 & 2 & -1 & -1 & 0\\
+1 & 3 & 4 & -1 & 3 & 0\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l5\rightarrow l5-l1}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccc|c}
+0 & 2 & 2 & 0 & -1 & 0\\
+1 & 0 & 1 & -1 & 0 & 0\\
+0 & 0 & 0 & 3 & 1 & 0\\
+1 & 1 & 2 & -1 & -1 & 0\\
+1 & 1 & 2 & -1 & 4 & 0\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l5\rightarrow l5-l4}
+\\\\
+$\left[
+\begin{tabular}{ccccc|c}
+0 & 2 & 2 & 0 & -1 & 0\\
+1 & 0 & 1 & -1 & 0 & 0\\
+0 & 0 & 0 & 3 & 1 & 0\\
+1 & 1 & 2 & -1 & -1 & 0\\
+0 & 0 & 0 & -0 & 5 & 0\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l5\rightarrow l5/5}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccc|c}
+0 & 2 & 2 & 0 & -1 & 0\\
+1 & 0 & 1 & -1 & 0 & 0\\
+0 & 0 & 0 & 3 & 1 & 0\\
+1 & 1 & 2 & -1 & -1 & 0\\
+0 & 0 & 0 & -0 & 1 & 0\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l1\rightarrow l5+l1}
+\\\\
+$\left[
+\begin{tabular}{ccccc|c}
+0 & 2 & 2 & 0 & 0 & 0\\
+1 & 0 & 1 & -1 & 0 & 0\\
+0 & 0 & 0 & 3 & 1 & 0\\
+1 & 1 & 2 & -1 & -1 & 0\\
+0 & 0 & 0 & 0 & 1 & 0\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l4\rightarrow l4-l1}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccc|c}
+0 & 2 & 2 & 0 & 0 & 0\\
+1 & 0 & 1 & -1 & 0 & 0\\
+0 & 0 & 0 & 3 & 1 & 0\\
+1 & -1 & 0 & -1 & -1 & 0\\
+0 & 0 & 0 & 0 & 1 & 0\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l3\rightarrow l3-l5}
+\\\\
+$\left[
+\begin{tabular}{ccccc|c}
+0 & 2 & 2 & 0 & 0 & 0\\
+1 & 0 & 1 & -1 & 0 & 0\\
+0 & 0 & 0 & 3 & 0 & 0\\
+1 & -1 & 0 & -1 & -1 & 0\\
+0 & 0 & 0 & 0 & 1 & 0\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l3\leftrightarrow14}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccc|c}
+0 & 2 & 2 & 0 & 0 & 0\\
+1 & 0 & 1 & -1 & 0 & 0\\
+1 & -1 & 0 & -1 & -1 & 0\\
+0 & 0 & 0 & 3 & 0 & 0\\
+0 & 0 & 0 & 0 & 1 & 0\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l4\rightarrow l4/3}
+\\\\
+$\left[
+\begin{tabular}{ccccc|c}
+0 & 2 & 2 & 0 & 0 & 0\\
+1 & 0 & 1 & -1 & 0 & 0\\
+1 & -1 & 0 & -1 & -1 & 0\\
+0 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 0 & 1 & 0\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l2\rightarrow 12+l4}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccc|c}
+0 & 2 & 2 & 0 & 0 & 0\\
+1 & 0 & 1 & 0 & 0 & 0\\
+1 & -1 & 0 & -1 & -1 & 0\\
+0 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 0 & 1 & 0\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l3\rightarrow l3+l5}
+\\\\
+$\left[
+\begin{tabular}{ccccc|c}
+0 & 2 & 2 & 0 & 0 & 0\\
+1 & 0 & 1 & 0 & 0 & 0\\
+1 & -1 & 0 & -1 & 0 & 0\\
+0 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 0 & 1 & 0\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l3\rightarrow 13+l4}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccc|c}
+0 & 2 & 2 & 0 & 0 & 0\\
+1 & 0 & 1 & 0 & 0 & 0\\
+1 & -1 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 0 & 1 & 0\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l1\rightarrow 2l2-l1}
+\\\\
+$\left[
+\begin{tabular}{ccccc|c}
+2 & -2 & 0 & 0 & 0 & 0\\
+1 & 0 & 1 & 0 & 0 & 0\\
+1 & -1 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 0 & 1 & 0\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l3\rightarrow -l3}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccc|c}
+2 & -2 & 0 & 0 & 0 & 0\\
+1 & 0 & 1 & 0 & 0 & 0\\
+-1 & 1 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 0 & 1 & 0\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l1\rightarrow 2l3-l1}
+\\\\
+$\left[
+\begin{tabular}{ccccc|c}
+0 & 0 & 0 & 0 & 0 & 0\\
+1 & 0 & 1 & 0 & 0 & 0\\
+-1 & 1 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 0 & 1 & 0\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\textit{R: Portanto, é LD}\\\\
+\begin{itemize}
+   \item Forma base do R-espaço vetorial R5?
+   \\\textit{R: Não forma base, pois é LD}
+\end{itemize}
+
+\section{Exercício 3}\label{ex3}
+ Considere o conjunto W = \{(x, y, z, w, t, u) \mid  x, y, z, w, t, u \in R \land x + y + w + z + t + u = 0 \land y -  w - z = 0 \land w + t - x = 0\} \subseteq R^6. 
+
+
+\item Mostre que conjunto W é um subespaço do R-espaço vetorial R^6 .
+
+   
+\\t – x = 0 
+
+t = x 
+
+y – w – z = 0 
+
+y = w + z 
+
+x + y + w + z + t + u = 0 \to  x + w + z + w + z + x + u = 0 
+
+u = -x -y -w -z -t \to u = -2x -2w -2z 
+
+W = \{(x, w + z, z, w, x, - x – w – z – w – z – x)\} \to
+
+W = \{(x, w + z, z, w, x, - 2x – 2w – 2z)\mid x, z, w \in R\}\\
+
+I) 0 \in W para x = 0 z = 0 w = 0 
+
+(w, w, w, w, w, -w) \to (x, w + z, z, w, x, - 2x – 2w – 2z) 
+
+= (0, 0, 0, 0, 0, -0) 
+
+= 0 
+
+Logo, 0 \in W\\ 
+
+II) u, v \in W \to  u + v \in W, sendo:  
+
+u = (u1, u2, u3, u4, u5, -u6) \to (x_1, w_1 + z_1, z_1, w_1, x_1, - 2x_1 – 2w_1 – 2z_1) 
+
+v = (v1, v2, v3, v4, v5, -v6) \to (x_2, w_2 + z_2, z_2, w_2, x_2, - 2x_2 – 2w_2 – 2z_2)  
+
+u + v = (x_1 + x_2, (w_1+z_1) + (w_2+z2) , z_1 + z_2, w_1 + w_2, x_1 + x_2, (-2x_1 -2w_1 - 2z_2) + (-2x_2 - 2w_2 - 2z_2)) 
+
+u + v = (x_1 + x_2, w_1+z_1+w_2+z_2, z_1+z_2, w_1+w_2, x_1+x_2, -2x_1-2x_2,-2w_1-2w_2,-2z_1-2z_2) 
+
+Logo, u + v \in W \\
+
+III) a \in R, v \in W \to av \in W, sendo:  
+
+v = (v1, v2, v3, v4, v5, -v6) \to (x, w + z, z, w, x, - 2x – 2w – 2z) 
+
+av = a . (x_1, w_1+z_1, z_1, w_1, x_1, -2x_1-2w_1-2z_1) 
+
+ av = (a. x_1, a . w_1+z_1, a . z_1, a . w_1, a . x_1, a. -2x_1-2w_1-2z_1)  
+
+av = (ax_1, aw_1w_2, az_1, aw_1, ax_1, a-2x_1-2w_1-2z_1) 
+
+Logo, av \in W. \\
+
+Logo W é subespaço vetorial de R6.\\
+
+\begin{itemize}
+\\\item O conjunto W = \{(x, y, z) \mid  x, y, z \in R \land x - z = 1 \land  y + x = 0\} \end{itemize}
+    
+    \item é um subsespaço vetorial de R3? Esboce graficamente W.\\
+
+x – z = 1 à x = 1 + z
+
+y + x = 0 à y + 1 + z = 0 à y = -1 – z. 
+
+W = \{(1 + z, -1 - z, z)\} \\
+
+I) 0 \in W, para z = 0 
+
+(1 + z, - 1 – z, z) \to (1 + 0, - 1 – 0, 0) = (1, -1, 0).  
+
+Logo 0 NÃO pertence a W para z = 0. Portanto, W NÃO é subespaço vetorial.\\ 
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=10cm]{grafico.jpeg}
+\caption{Representação gráfica.}
+\label{fig:grafico.jpeg}
+\end{figure}
+
+
+\begin{itemize}
+\item Invente seu subespaço vetorial em qualquer R n com n maior igual a 2. Mostre que o conjunto apresentado é de fato
+um subespaço vetorial. Não vale usar nenhum exemplo da aula ou da prova
+\end{itemize}
+
+Z = \{(x, y, z) \mid  2y + z = 0 \land  x + y = 0\} 
+
+ 
+
+2y + z = 0 
+
+x + y = 0 
+
+ 
+
+z = -2y 
+
+x = -y  
+
+ 
+
+Z= (-y, y, -2y) 
+
+Z = \{(-z, z, -z) \mid  Z \in R\}\\
+
+ 
+
+I)0 \in Z, para z = 0 
+
+(z, z, z) \to (-y, y,-2y) 
+
+y \to 0  
+
+(-y, y, -2y) = (-0, 0, -0) = (0, 0, 0) 
+
+Logo, 0 \in Z\\ 
+
+II) u, v \in Z \to  u + v \in Z, sendo:  
+
+u = (-y1, y1, -2y1)
+
+v = (-y2, y2, -2y2)
+
+u + v = (-y, y, -2y) + (-y2, y2, -2y2)
+
+u + v = (-y1-y2, y1+y2, -2y-2y2) 
+
+Logo, u + v \in Z\\
+
+III) a \in R, v \in Z \to av \in Z. Sendo:  
+
+v = (v1,v2,v3)  \to (-y, y, -2y)  
+
+a.v = a . (-y, y, -2y) 
+
+a.v = (a . (-y), a . y, a . (-2y)) 
+
+a.v = (-ay, ay, -a2y) 
+
+Logo, av \in Z \\
+
+Logo Z é subespaço vetorial de R3 \\
+
+\end{itemize}
+
+\section{Exercício 4}\label{ex4}
+Mostre que o conjunto \{(−1, 1, 1, 1, 0, 1, 1),(1, 0, −1, 1, 1, −1, 0),(2, 2, 1, 1, −1, 1, 1),
+(1, 0, 0, 1, 2, 1, 1),(2, 0, 2, 0, 2, 0, 2),(1, −1, −1, −1, −1, −1, 1),(3, 0, 2, 0, 2, −1, 2)\} forma uma base para o R−espaço vetorial R7. Escreva o vetor (0, 1, 1, 1, 1, 0, 1) nesta base.
+\end{itemize}
+\\
+\textbf{}\\
+\\\\\\\\\\
+\xrightarrow{Início}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 1 & 2 & 1 & 2 & 1 & 3 & x\\
+1 & 0 & 2 & 0 & 0 & -1 & 0 & y\\
+1 & -1 & 1 & 0 & 2 & -1 & 2 & z\\
+1 & 1 & 1 & 1 & 0 & -1 & 0 & w\\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & f\\
+1 & -1 & 1 & 1 & 0 & -1 & -1 & g\\
+1 & 0 & 1 & 1 & 2 & 1 & 2 & h\\
+\end{tabular}
+\right]}
+\end{hbox}
+\\\\\\\\\\
+\begin{hbox}{ 
+$
+$$\xrightarrow{l2\rightarrow l2+l1}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 1 & 2 & 1 & 2 & 1 & 3 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+1 & -1 & 1 & 0 & 2 & -1 & 2 & z\\
+1 & 1 & 1 & 1 & 0 & -1 & 0 & w\\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & f\\
+1 & -1 & 1 & 1 & 0 & -1 & -1 & g\\
+1 & 0 & 1 & 1 & 2 & 1 & 2 & h\\
+\end{tabular}
+\right]\\
+$}
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l3\rightarrow l3+l1}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 1 & 2 & 1 & 2 & 1 & 3 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & z\\
+1 & 1 & 1 & 1 & 0 & -1 & 0 & w\\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & f\\
+1 & -1 & 1 & 1 & 0 & -1 & -1 & g\\
+1 & 0 & 1 & 1 & 2 & 1 & 2 & h\\
+\end{tabular}
+\right]
+$}
+\end{hbox}
+
+$
+$$\xrightarrow{l4\rightarrow l4 + l1}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 1 & 2 & 1 & 2 & 1 & 3 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & z\\
+0 & 2 & 3 & 2 & 2 & 0 & 3 & w\\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & f\\
+1 & -1 & 1 & 1 & 0 & -1 & -1 & g\\
+1 & 0 & 1 & 1 & 2 & 1 & 2 & h\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l6\rightarrow l6+l1}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 1 & 2 & 1 & 2 & 1 & 3 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & z\\
+0 & 2 & 3 & 2 & 2 & 0 & 3 & w\\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & f\\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & g\\
+1 & 0 & 1 & 1 & 2 & 1 & 2 & h\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l7\rightarrow l7 + l1}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 1 & 2 & 1 & 2 & 1 & 3 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & z\\
+0 & 2 & 3 & 2 & 2 & 0 & 3 & w\\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & f\\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & g\\
+0 & 1 & 3 & 2 & 4 & 2 & 5 & h\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l1\rightarrow l1-l2}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & z\\
+0 & 2 & 3 & 2 & 2 & 0 & 3 & w\\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & f\\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & g\\
+0 & 1 & 3 & 2 & 4 & 2 & 5 & h\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l4\rightarrow l4/2}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & z\\
+0 & 1 & 3/2 & 0 & 0 & 0 & 3/2 & w\\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & f\\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & g\\
+0 & 1 & 3 & 2 & 4 & 2 & 5 & h\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l4\rightarrow l4-l2}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & z\\
+0 & 0 & -5/2 & 0 & -1 & 0 & -3/2 & w\\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & f\\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & g\\
+0 & 1 & 3 & 2 & 4 & 2 & 5 & h\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l5\rightarrow l5-l2}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & z\\
+0 & 0 & -5/2 & 0 & -1 & 0 & -3/2 & w\\
+0 & 0 & -5 & 1 & 0 & -1 & -1 & f\\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & g\\
+0 & 1 & 3 & 2 & 4 & 2 & 5 & h\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l7\rightarrow l7-l2}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & z\\
+0 & 0 & -5/2 & 0 & -1 & 0 & -3/2 & w\\
+0 & 0 & -5 & 1 & 0 & -1 & -1 & f\\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & g\\
+0 & 0 & -1 & 1 & 2 & 2 & 2 & h\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l3\rightarrow l3/3}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & -5/2 & 0 & -1 & 0 & -3/2 & w\\
+0 & 0 & -5 & 1 & 0 & -1 & -1 & f\\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & g\\
+0 & 0 & -1 & 1 & 2 & 2 & 2 & h\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l4\rightarrow -2.5.l4}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 1 & 0 & 2/5 & 0 & 3/5 & w\\
+0 & 0 & -5 & 1 & 0 & -1 & -1 & f\\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & g\\
+0 & 0 & -1 & 1 & 2 & 2 & 2 & h\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l5\rightarrow l5/5}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 1 & 0 & 2/5 & 0 & 3/5 & w\\
+0 & 0 & -1 & 1/5 & 0 & -1/5 & -1/5 & f\\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & g\\
+0 & 0 & -1 & 1 & 2 & 2 & 2 & h\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l6\rightarrow l6/3}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 1 & 0 & 2/5 & 0 & 3/5 & w\\
+0 & 0 & -1 & 1/5 & 0 & -1/5 & -1/5 & f\\
+0 & 0 & 1 & 2/3 & 2/3 & 0 & 2/3 & g\\
+0 & 0 & -1 & 1 & 2 & 2 & 2 & h\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l4\rightarrow l4-l3}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 0 & -1/3 & -14/15 & 0 & 16/15 & w\\
+0 & 0 & -1 & 1/5 & 0 & -1/5 & -1/5 & f\\
+0 & 0 & 1 & 2/3 & 2/3 & 0 & 2/3 & g\\
+0 & 0 & -1 & 1 & 2 & 2 & 2 & h\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l5\rightarrow l5+l3}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 0 & -1/3 & -14/15 & 0 & 16/15 & w\\
+0 & 0 & 0 & 8/15 & 4/3 & -1/5 & 22/15 & f\\
+0 & 0 & 1 & 2/3 & 2/3 & 0 & 2/3 & g\\
+0 & 0 & -1 & 1 & 2 & 2 & 2 & h\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l6\rightarrow l6-l3}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 0 & -1/3 & -14/15 & 0 & 16/15 & w\\
+0 & 0 & 0 & 8/15 & 4/3 & -1/5 & 22/15 & f\\
+0 & 0 & 0 & 1/3 & -2/3 & 0 & -1 & g\\
+0 & 0 & -1 & 1 & 2 & 2 & 2 & h\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l7\rightarrow l7+l3}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 0 & -1/3 & -14/15 & 0 & 16/15 & w\\
+0 & 0 & 0 & 8/15 & 4/3 & -1/5 & 22/15 & f\\
+0 & 0 & 0 & 1/3 & -2/3 & 0 & -1 & g\\
+0 & 0 & 0 & 4/3 & 10/3 & 2 & 11/3 & h\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l4\rightarrow 3.l4}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & w\\
+0 & 0 & 0 & 8/15 & 4/3 & -1/5 & 22/15 & f\\
+0 & 0 & 0 & 1/3 & -2/3 & 0 & -1 & g\\
+0 & 0 & 0 & 4/3 & 10/3 & 2 & 11/3 & h\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l5\rightarrow 15/8.l5}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & w\\
+0 & 0 & 0 & 1 & 5/2 & -3/8 & 11/4 & f\\
+0 & 0 & 0 & 1/3 & -2/3 & 0 & -1 & g\\
+0 & 0 & 0 & 4/3 & 10/3 & 2 & 11/3 & h\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l6\rightarrow 3.l6}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & w\\
+0 & 0 & 0 & 1 & 5/2 & -3/8 & 11/4 & f\\
+0 & 0 & 0 & 1 & -2 & 0 & -3 & g\\
+0 & 0 & 0 & 4/3 & 10/3 & 2 & 11/3 & h\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l5\rightarrow l5-l4}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & w\\
+0 & 0 & 0 & 0 & -3/10 & -3/8 & -9/20 & f\\
+0 & 0 & 0 & 1 & -2 & 0 & -3 & g\\
+0 & 0 & 0 & 1 & 5/2 & 3/2 & 11/4 & h\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l6\rightarrow l6-l4}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & w\\
+0 & 0 & 0 & 0 & -3/10 & -3/8 & -9/20 & f\\
+0 & 0 & 0 & 0 & -24/5 & 0 & -31/5 & g\\
+0 & 0 & 0 & 1 & 5/2 & 3/2 & 11/4 & h\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l7\rightarrow l7-l4}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & w\\
+0 & 0 & 0 & 0 & -3/10 & -3/8 & -9/20 & f\\
+0 & 0 & 0 & 0 & -24/5 & 0 & -31/5 & g\\
+0 & 0 & 0 & 0 & -3/10 & 3/2 & -9/20 & h\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l5\rightarrow -10/3.l4}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & w\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 3/2 & f\\
+0 & 0 & 0 & 0 & -24/5 & 0 & -31/5 & g\\
+0 & 0 & 0 & 0 & -3/10 & 3/2 & -9/20 & h\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l6\rightarrow -5/24.l6}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & w\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 3/2 & f\\
+0 & 0 & 0 & 0 & 1 & 0 & 31/24 & g\\
+0 & 0 & 0 & 0 & -3/10 & 3/2 & -9/20 & h\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l7\rightarrow -10/3.l7}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & w\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 3/2 & f\\
+0 & 0 & 0 & 0 & 1 & 0 & 31/24 & g\\
+0 & 0 & 0 & 0 & 1 & -5 & 3/2 & h\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l6\rightarrow l6-l5}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & w\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 3/2 & f\\
+0 & 0 & 0 & 0 & 0 & -5/4 & -5/24 & g\\
+0 & 0 & 0 & 0 & 1 & -5 & 3/2 & h\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l7\rightarrow l7-l5}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & w\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 3/2 & f\\
+0 & 0 & 0 & 0 & 0 & -5/4 & -5/24 & g\\
+0 & 0 & 0 & 0 & 0 & -25/4 & 0 & h\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l6\rightarrow -4/5.l6}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & w\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 3/2 & f\\
+0 & 0 & 0 & 0 & 0 & 1 & 1/6 & g\\
+0 & 0 & 0 & 0 & 0 & -25/4 & 0 & h\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l7\rightarrow -4/25.l7}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & w\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 3/2 & f\\
+0 & 0 & 0 & 0 & 0 & 1 & 1/6 & g\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & h\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l7\rightarrow l7-l6}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & w\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 3/2 & f\\
+0 & 0 & 0 & 0 & 0 & 1 & 1/6 & g\\
+0 & 0 & 0 & 0 & 0 & 0 & -1/6 & h\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l7\rightarrow -6.l7}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & w\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 3/2 & f\\
+0 & 0 & 0 & 0 & 0 & 1 & 1/6 & g\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & h\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l6\rightarrow l6- (1/6.l7)}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & w\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 3/2 & f\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & g\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & h\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l5\rightarrow l5-(3/2.l7)}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & w\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 0 & f\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & g\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & h\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l4\rightarrow l4- (16/5.l7)}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & x\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & y\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & z\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 0 & w\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 0 & f\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & g\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & h\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l3\rightarrow l3-(5/3.l7)}
+\\\\
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
