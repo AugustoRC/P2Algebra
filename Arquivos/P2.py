@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import random as rd #trocar pelo dataset que temos
+import random as rd
 from sklearn import preprocessing 
 from sklearn.decomposition import PCA
 
